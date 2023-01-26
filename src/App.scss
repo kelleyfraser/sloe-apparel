@@ -1,0 +1,265 @@
+// Import Google Fonts
+@import url('https://fonts.googleapis.com/css2?family=Belleza&family=Roboto&display=swap');
+
+// Custom variables
+$dark-purple: #444065;
+$light-purple: #6c65a8;
+
+// Import Bootstrap
+@import '~bootstrap/scss/bootstrap.scss';
+
+.App {
+
+  // Typography
+  h1,
+  h2,
+  h3,
+  p,
+  a {
+    color: $dark-purple;
+  }
+
+  h1,
+  h2,
+  h3 {
+    font-family: 'Belleza';
+  }
+
+  p,
+  a {
+    font-family: 'Roboto';
+  }
+
+  h3 {
+    font-size: 25px;
+  }
+
+  h2 {
+    margin-bottom: 25px;
+  }
+
+  a {
+    font-weight: bold;
+    text-decoration: none;
+  }
+
+  .btn-purple {
+    background: $dark-purple;
+    color: white;
+  }
+
+  // Navbar section
+  .navbar {
+    border-bottom: 1px solid lightgray;
+    padding: 10px;
+
+    .navbar-links-container {
+      width: 25%;
+
+      ul {
+        padding: 0;
+        margin: 0;
+
+        a {
+          margin: 4px 6px;
+        }
+      }
+    }
+
+    .brand-container {
+      a {
+        align-items: center;
+        display: flex;
+        flex-direction: row;
+        padding: 0;
+      }
+
+      .brand-img {
+        width: 80px;
+      }
+
+      .brand-name {
+        margin: 0 10px;
+      }
+    }
+
+    .welcome-container {
+      text-align: right;
+      width: 25%;
+
+      .welcome-message {
+        font-weight: bold;
+        margin-bottom: 0;
+        margin-right: 10px;
+      }
+    }
+
+    // Smaller screens + tablets
+    @media screen and (max-width: 950px) {
+      .container-fluid {
+        align-items: center;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        text-align: center;
+
+        .navbar-links-container {
+          margin-bottom: 10px;
+          width: 100%;
+        }
+
+        .welcome-container {
+          text-align: center;
+          width: 100%;
+          margin-bottom: 10px;
+        }
+      }
+    }
+  }
+
+  // === Pages ===
+  // General classes
+  .page {
+    margin: 40px 20px;
+  }
+
+  // Landing page
+  .landing-page {
+    background: url(../public/images/landingPage.jpg);
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    min-height: calc(100vh - 85px);
+    padding-top: 20vh;
+    width: 100%;
+
+    .about {
+      align-items: center;
+      background: rgba(255, 255, 255, 0.8);
+      border-radius: 8px;
+      display: flex;
+      flex-direction: row;
+      justify-content: space-between;
+      margin: 0 auto;
+      padding: 20px 30px;
+      width: 650px;
+
+      .about-img {
+        img {
+          margin-right: 30px;
+          width: 200px;
+        }
+      }
+    }
+
+    // Switch to column from row when logo starts overlapping with about text
+    @media screen and (max-width: 700px) {
+      .about {
+        flex-direction: column;
+        width: 90%;
+
+        .about-text {
+          h3 {
+            text-align: center;
+          }
+        }
+
+        .about-img {
+          img {
+            margin-right: 0px;
+            width: 200px;
+          }
+        }
+      }
+    }
+  }
+
+  // Adjust height of landing page when navbar gets taller
+  @media screen and (max-width: 950px) {
+    .landing-page {
+      min-height: calc(100vh - 143.8px);
+      padding-top: 10vh;
+    }
+  }
+
+  // Shopping page
+  .products-list {
+    .products {
+      display: grid;
+      grid-template-columns: 1fr 1fr 1fr;
+
+      .product-card {
+        margin: 0 10px 20px 10px;
+
+        img {
+          margin-bottom: 8px;
+          width: 90%;
+        }
+
+        p {
+          color: $dark-purple;
+          margin: 5px 0;
+        }
+
+        .price {
+          color: $light-purple;
+          font-weight: bold;
+        }
+      }
+    }
+
+    // Change to column when 3x3 grid is too big for window
+    @media screen and (max-width: 780px) {
+      .products {
+        display: flex;
+        flex-direction: column;
+
+        .product-card {
+          img {
+            width: 50%;
+          }
+        }
+      }
+    }
+  }
+
+  // Profile page
+  .profile-container {
+    .profile-content {
+      margin-bottom: 40px;
+
+      h1 {
+        margin-top: 40px;
+      }
+    }
+  }
+
+  // Interest calculator page
+  .interest-calculator {
+    margin: 0 auto;
+    width: 50%;
+
+    .btn-container {
+      display: flex;
+      justify-content: center;
+    }
+  }
+
+  .interest-calculator-results {
+    margin-top: 30px;
+
+    .interest-results {
+      border: 0.8px solid rgba(148, 148, 148, 0.3);
+      border-radius: 6px;
+      margin: 0 auto;
+      padding: 20px;
+      text-align: center;
+      width: 50%;
+
+      h3 {
+        margin-top: 10px;
+      }
+    }
+  }
+
+}
