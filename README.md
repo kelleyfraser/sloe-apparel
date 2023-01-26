@@ -6,4 +6,4 @@ This is the first iteration of a complete ecommerce site. I will add a shopping 
 
 # Demo: 
 
-"https://kelleyfraser.github.io/sloe-apparel/"
+https://kelleyfraser.github.io/sloe-apparel/
