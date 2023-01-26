@@ -1,0 +1,21 @@
+{
+  "files": {
+    "main.css": "/sloe-apparel/static/css/main.c3174188.css",
+    "main.js": "/sloe-apparel/static/js/main.70add994.js",
+    "static/js/787.910e50fe.chunk.js": "/sloe-apparel/static/js/787.910e50fe.chunk.js",
+    "static/media/landingPage.jpg": "/sloe-apparel/static/media/landingPage.0791af24974046e94982.jpg",
+    "static/media/fontawesome-webfont.svg?v=4.7.0": "/sloe-apparel/static/media/fontawesome-webfont.c1e38fd9e0e74ba58f7a.svg",
+    "static/media/fontawesome-webfont.eot": "/sloe-apparel/static/media/fontawesome-webfont.8b43027f47b20503057d.eot",
+    "static/media/fontawesome-webfont.ttf?v=4.7.0": "/sloe-apparel/static/media/fontawesome-webfont.1e59d2330b4c6deb84b3.ttf",
+    "static/media/fontawesome-webfont.woff?v=4.7.0": "/sloe-apparel/static/media/fontawesome-webfont.f691f37e57f04c152e23.woff",
+    "static/media/fontawesome-webfont.woff2?v=4.7.0": "/sloe-apparel/static/media/fontawesome-webfont.20fd1704ea223900efa9.woff2",
+    "index.html": "/sloe-apparel/index.html",
+    "main.c3174188.css.map": "/sloe-apparel/static/css/main.c3174188.css.map",
+    "main.70add994.js.map": "/sloe-apparel/static/js/main.70add994.js.map",
+    "787.910e50fe.chunk.js.map": "/sloe-apparel/static/js/787.910e50fe.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.c3174188.css",
+    "static/js/main.70add994.js"
+  ]
+}
